@@ -1,6 +1,6 @@
-class CreateBotanists < ActiveRecord::Migration
+class CreateCustomers < ActiveRecord::Migration
   def change
-    create_table :botanists do |t|
+    create_table :customers do |t|
     	t.text :name
     	t.text :photo_url
     	t.text :address

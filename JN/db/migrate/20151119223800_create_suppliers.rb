@@ -1,6 +1,6 @@
-class CreateBotanists < ActiveRecord::Migration
+class CreateSuppliers < ActiveRecord::Migration
   def change
-    create_table :botanists do |t|
+    create_table :suppliers do |t|
     	t.text :name
     	t.text :photo_url
     	t.text :address
@@ -11,7 +11,7 @@ class CreateBotanists < ActiveRecord::Migration
     	t.text :plant
     	t.text :description
     	t.belongs_to :user
-    	t.timestamps null: false
+      	t.timestamps null: false
     end
   end
 end
